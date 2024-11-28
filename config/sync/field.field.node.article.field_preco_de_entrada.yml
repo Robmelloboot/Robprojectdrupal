@@ -1,0 +1,19 @@
+uuid: e9e4d6c5-6d37-483c-9906-f15b75f75860
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preco_de_entrada
+    - node.type.article
+id: node.article.field_preco_de_entrada
+field_name: field_preco_de_entrada
+entity_type: node
+bundle: article
+label: 'Preço de entrada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,34 @@
+uuid: c5b685fb-2eae-4a63-abea-23acb5fee5dc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.cachoeiras_relacionadas
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__cachoeiras_relacionadas_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:cachoeiras_relacionadas-block_1'
+settings:
+  id: 'views_block:cachoeiras_relacionadas-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      cachoeiras: cachoeiras

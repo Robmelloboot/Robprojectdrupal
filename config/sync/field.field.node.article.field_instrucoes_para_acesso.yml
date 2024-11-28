@@ -1,0 +1,19 @@
+uuid: c185ce34-4db3-4741-8ff1-6fcd4af59a3e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrucoes_para_acesso
+    - node.type.article
+id: node.article.field_instrucoes_para_acesso
+field_name: field_instrucoes_para_acesso
+entity_type: node
+bundle: article
+label: 'Instruções para Acesso'
+description: 'Encontre aqui como localizar as cachoeiras. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

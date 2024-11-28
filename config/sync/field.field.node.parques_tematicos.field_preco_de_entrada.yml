@@ -1,0 +1,19 @@
+uuid: dcd00a04-cdf4-4069-9ba5-ff94df136309
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preco_de_entrada
+    - node.type.parques_tematicos
+id: node.parques_tematicos.field_preco_de_entrada
+field_name: field_preco_de_entrada
+entity_type: node
+bundle: parques_tematicos
+label: 'Preço de entrada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

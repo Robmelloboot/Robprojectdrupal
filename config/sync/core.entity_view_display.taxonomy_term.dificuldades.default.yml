@@ -1,0 +1,31 @@
+uuid: 9a99aa7f-c30b-4a90-932b-0b495c2ae4e8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.dificuldades.field_dificuldade
+    - taxonomy.vocabulary.dificuldades
+  module:
+    - text
+id: taxonomy_term.dificuldades.default
+targetEntityType: taxonomy_term
+bundle: dificuldades
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_dificuldade:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

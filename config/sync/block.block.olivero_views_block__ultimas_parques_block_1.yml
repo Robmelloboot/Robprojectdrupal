@@ -1,0 +1,24 @@
+uuid: 4d6dbcd5-d664-4faa-ac1c-424f96a62277
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.ultimas_parques
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__ultimas_parques_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:ultimas_parques-block_1'
+settings:
+  id: 'views_block:ultimas_parques-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,57 @@
+uuid: 82b426c8-6b28-4035-a050-ea41569e93b0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parques_de_diversoes.body
+    - field.field.node.parques_de_diversoes.field_image
+    - field.field.node.parques_de_diversoes.field_localizacao
+    - field.field.node.parques_de_diversoes.field_preco_de_entrada
+    - field.field.node.parques_de_diversoes.field_principais_atracoes
+    - field.field.node.parques_de_diversoes.field_site_oficial
+    - field.field.node.parques_de_diversoes.field_video_de_parques
+    - field.field.node.parques_de_diversoes.layout_builder__layout
+    - image.style.medium
+    - node.type.parques_de_diversoes
+  module:
+    - image
+    - text
+    - user
+id: node.parques_de_diversoes.teaser
+targetEntityType: node
+bundle: parques_de_diversoes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_localizacao: true
+  field_preco_de_entrada: true
+  field_principais_atracoes: true
+  field_site_oficial: true
+  field_video_de_parques: true
+  langcode: true
+  layout_builder__layout: true

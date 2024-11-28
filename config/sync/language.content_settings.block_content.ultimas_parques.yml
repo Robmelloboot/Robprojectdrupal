@@ -1,0 +1,11 @@
+uuid: 8f6c1c9c-85c5-4080-848a-0b2e6a0394aa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.ultimas_parques
+id: block_content.ultimas_parques
+target_entity_type_id: block_content
+target_bundle: ultimas_parques
+default_langcode: site_default
+language_alterable: false

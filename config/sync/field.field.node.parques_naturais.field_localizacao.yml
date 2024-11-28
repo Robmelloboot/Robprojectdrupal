@@ -1,0 +1,29 @@
+uuid: 9d4fc58e-1bb4-46ff-bf6c-9da951e373f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localizacao
+    - node.type.parques_naturais
+    - taxonomy.vocabulary.localizacoes
+id: node.parques_naturais.field_localizacao
+field_name: field_localizacao
+entity_type: node
+bundle: parques_naturais
+label: Localização
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localizacoes: localizacoes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

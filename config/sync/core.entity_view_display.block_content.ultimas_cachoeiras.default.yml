@@ -1,0 +1,23 @@
+uuid: 51275c18-1931-4f60-9130-3b305f602fac
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.ultimas_cachoeiras
+    - field.field.block_content.ultimas_cachoeiras.body
+  module:
+    - text
+id: block_content.ultimas_cachoeiras.default
+targetEntityType: block_content
+bundle: ultimas_cachoeiras
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,315 @@
+uuid: ae99d1d1-308f-4a61-8b85-071a33354865
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.cachoeiras.body
+    - field.field.node.cachoeiras.field_altura_em_metros
+    - field.field.node.cachoeiras.field_dificuldades
+    - field.field.node.cachoeiras.field_horarios_de_funcionamento
+    - field.field.node.cachoeiras.field_image
+    - field.field.node.cachoeiras.field_instrucoes_para_acesso
+    - field.field.node.cachoeiras.field_localizacao
+    - field.field.node.cachoeiras.field_principais_atracoes
+    - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.field_video_de_cachoeiras
+    - field.field.node.cachoeiras.layout_builder__layout
+    - image.style.wide
+    - node.type.cachoeiras
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          98e0c12f-e098-4cb2-a6c1-48cccf1a4a5d:
+            uuid: 98e0c12f-e098-4cb2-a6c1-48cccf1a4a5d
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: eager
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4c32d0ef-3755-466b-b17a-72f0cb028d9b:
+            uuid: 4c32d0ef-3755-466b-b17a-72f0cb028d9b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cachoeiras:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          8e41cd67-c783-433e-b838-17e831352a2f:
+            uuid: 8e41cd67-c783-433e-b838-17e831352a2f
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          5ef5791f-ec62-446d-99b2-be66b3b13d6e:
+            uuid: 5ef5791f-ec62-446d-99b2-be66b3b13d6e
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_site_oficial'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          08dd4b86-c394-4c11-b821-b70f16ce6614:
+            uuid: 08dd4b86-c394-4c11-b821-b70f16ce6614
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_instrucoes_para_acesso'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          559ed2cd-e7fb-403b-a987-63aed9910674:
+            uuid: 559ed2cd-e7fb-403b-a987-63aed9910674
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_altura_em_metros'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          f465fe0c-b02e-4d86-9661-a4835f8772e9:
+            uuid: f465fe0c-b02e-4d86-9661-a4835f8772e9
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_localizacao'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          e1c53779-ae17-48de-a114-a31aeac24eab:
+            uuid: e1c53779-ae17-48de-a114-a31aeac24eab
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_dificuldades'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          d5224b06-99ff-4995-9138-8e9583fcc0dc:
+            uuid: d5224b06-99ff-4995-9138-8e9583fcc0dc
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_horarios_de_funcionamento'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          621b40bb-18c7-4c1d-b85a-92f6846ccf83:
+            uuid: 621b40bb-18c7-4c1d-b85a-92f6846ccf83
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_principais_atracoes'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          27b933a8-3972-488b-9d78-fe4ee1a4c6e5:
+            uuid: 27b933a8-3972-488b-9d78-fe4ee1a4c6e5
+            region: content
+            configuration:
+              id: 'field_block:node:cachoeiras:field_video_de_cachoeiras'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+        third_party_settings: {  }
+id: node.cachoeiras.default
+targetEntityType: node
+bundle: cachoeiras
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_altura_em_metros:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_dificuldades:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_horarios_de_funcionamento:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_instrucoes_para_acesso:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_localizacao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_principais_atracoes:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_site_oficial:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_video_de_cachoeiras:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

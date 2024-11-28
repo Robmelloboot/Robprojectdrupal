@@ -1,0 +1,96 @@
+uuid: 3e7c0feb-d63a-4379-9caf-025f0aaef07c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.parques_aquaticos.body
+    - field.field.node.parques_aquaticos.field_horarios_de_funcionamento
+    - field.field.node.parques_aquaticos.field_image
+    - field.field.node.parques_aquaticos.field_instrucoes_para_acesso
+    - field.field.node.parques_aquaticos.field_localizacao
+    - field.field.node.parques_aquaticos.field_preco_de_entrada
+    - field.field.node.parques_aquaticos.field_principais_atracoes
+    - field.field.node.parques_aquaticos.field_video_parques_aquaticos
+    - image.style.wide
+    - node.type.parques_aquaticos
+  module:
+    - image
+    - text
+    - user
+id: node.parques_aquaticos.default
+targetEntityType: node
+bundle: parques_aquaticos
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_horarios_de_funcionamento:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_instrucoes_para_acesso:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_localizacao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_preco_de_entrada:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_principais_atracoes:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_video_parques_aquaticos:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 1a3740c1-ef7a-4d33-a24d-a266ca5e2d4b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.ultimas_cachoeiras
+id: block_content.ultimas_cachoeiras
+target_entity_type_id: block_content
+target_bundle: ultimas_cachoeiras
+default_langcode: site_default
+language_alterable: false

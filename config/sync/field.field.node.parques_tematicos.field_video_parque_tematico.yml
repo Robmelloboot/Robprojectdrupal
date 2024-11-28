@@ -1,0 +1,29 @@
+uuid: a018c00b-c256-41c8-9647-bfd90e9b931d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_parque_tematico
+    - media.type.remote_video
+    - node.type.parques_tematicos
+id: node.parques_tematicos.field_video_parque_tematico
+field_name: field_video_parque_tematico
+entity_type: node
+bundle: parques_tematicos
+label: 'video parque tematico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

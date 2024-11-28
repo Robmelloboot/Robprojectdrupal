@@ -1,0 +1,45 @@
+uuid: a7af134c-9e9a-41de-a9bd-edba66da7f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_altura_em_metros
+    - field.field.node.article.field_dificuldades
+    - field.field.node.article.field_horarios_de_funcionamento
+    - field.field.node.article.field_image
+    - field.field.node.article.field_instrucoes_para_acesso
+    - field.field.node.article.field_localizacao
+    - field.field.node.article.field_preco_de_entrada
+    - field.field.node.article.field_principais_atracoes
+    - field.field.node.article.field_site_oficial
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_altura_em_metros: true
+  field_dificuldades: true
+  field_horarios_de_funcionamento: true
+  field_image: true
+  field_instrucoes_para_acesso: true
+  field_localizacao: true
+  field_preco_de_entrada: true
+  field_principais_atracoes: true
+  field_site_oficial: true
+  field_tags: true
+  langcode: true

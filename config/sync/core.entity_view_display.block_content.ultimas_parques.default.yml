@@ -1,0 +1,23 @@
+uuid: 6aa24b3c-9ef8-4af0-a118-c1f5122b4e84
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.ultimas_parques
+    - field.field.block_content.ultimas_parques.body
+  module:
+    - text
+id: block_content.ultimas_parques.default
+targetEntityType: block_content
+bundle: ultimas_parques
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

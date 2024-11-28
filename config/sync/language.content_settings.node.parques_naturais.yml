@@ -1,0 +1,11 @@
+uuid: 085b9209-13c3-4590-b619-97bd633eec18
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques_naturais
+id: node.parques_naturais
+target_entity_type_id: node
+target_bundle: parques_naturais
+default_langcode: site_default
+language_alterable: false

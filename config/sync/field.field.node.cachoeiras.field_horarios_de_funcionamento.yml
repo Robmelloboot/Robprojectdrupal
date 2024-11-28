@@ -1,0 +1,19 @@
+uuid: 47d94be7-a65d-4c3d-afd6-3e4d2fa903fa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios_de_funcionamento
+    - node.type.cachoeiras
+id: node.cachoeiras.field_horarios_de_funcionamento
+field_name: field_horarios_de_funcionamento
+entity_type: node
+bundle: cachoeiras
+label: 'Horários de Funcionamento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

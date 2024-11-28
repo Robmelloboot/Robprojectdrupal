@@ -1,0 +1,9 @@
+uuid: d2c4f58c-138a-4f5b-a385-317abd1d3a58
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Estilo de Atrações'
+vid: estilo_de_atracoes
+description: 'Tipos de experiências disponíveis no parque'
+weight: 0
+new_revision: false

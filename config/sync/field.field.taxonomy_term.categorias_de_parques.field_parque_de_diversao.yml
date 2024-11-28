@@ -1,0 +1,28 @@
+uuid: 171c5715-583a-4dd5-98ac-980e2debadde
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_parque_de_diversao
+    - taxonomy.vocabulary.categorias_de_parques
+id: taxonomy_term.categorias_de_parques.field_parque_de_diversao
+field_name: field_parque_de_diversao
+entity_type: taxonomy_term
+bundle: categorias_de_parques
+label: 'Parque de diversão'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_de_parques: categorias_de_parques
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

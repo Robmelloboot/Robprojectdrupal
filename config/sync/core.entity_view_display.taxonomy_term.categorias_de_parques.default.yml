@@ -1,0 +1,31 @@
+uuid: 859187d7-5c74-475d-b39e-a839b1fd76bd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorias_de_parques.field_parque_de_diversao
+    - taxonomy.vocabulary.categorias_de_parques
+  module:
+    - text
+id: taxonomy_term.categorias_de_parques.default
+targetEntityType: taxonomy_term
+bundle: categorias_de_parques
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_parque_de_diversao:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: 85e07d29-d162-4428-a17a-2458ffe6b5f7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_dificuldade
+    - taxonomy.vocabulary.dificuldades
+id: taxonomy_term.dificuldades.field_dificuldade
+field_name: field_dificuldade
+entity_type: taxonomy_term
+bundle: dificuldades
+label: Dificuldade
+description: 'Dificuldade de acesso a cachoeira.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dificuldades: dificuldades
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

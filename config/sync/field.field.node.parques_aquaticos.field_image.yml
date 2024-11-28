@@ -1,0 +1,38 @@
+uuid: a2d8179b-53a2-4012-9232-124134d89ec0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.parques_aquaticos
+  module:
+    - image
+id: node.parques_aquaticos.field_image
+field_name: field_image
+entity_type: node
+bundle: parques_aquaticos
+label: Imagem
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

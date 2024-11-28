@@ -1,0 +1,24 @@
+uuid: a2e04573-3b03-487b-9f3a-3f75cbae5fba
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.ultimas_parques
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.ultimas_parques.body
+field_name: body
+entity_type: block_content
+bundle: ultimas_parques
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

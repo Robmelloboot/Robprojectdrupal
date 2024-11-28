@@ -1,0 +1,63 @@
+uuid: 352cc2e2-fd14-4ed3-93f1-7e919c280c34
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cachoeiras.body
+    - field.field.node.cachoeiras.field_altura_em_metros
+    - field.field.node.cachoeiras.field_dificuldades
+    - field.field.node.cachoeiras.field_horarios_de_funcionamento
+    - field.field.node.cachoeiras.field_image
+    - field.field.node.cachoeiras.field_instrucoes_para_acesso
+    - field.field.node.cachoeiras.field_localizacao
+    - field.field.node.cachoeiras.field_principais_atracoes
+    - field.field.node.cachoeiras.field_site_oficial
+    - field.field.node.cachoeiras.field_video_de_cachoeiras
+    - field.field.node.cachoeiras.layout_builder__layout
+    - image.style.medium
+    - node.type.cachoeiras
+  module:
+    - image
+    - text
+    - user
+id: node.cachoeiras.teaser
+targetEntityType: node
+bundle: cachoeiras
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_altura_em_metros: true
+  field_dificuldades: true
+  field_horarios_de_funcionamento: true
+  field_instrucoes_para_acesso: true
+  field_localizacao: true
+  field_principais_atracoes: true
+  field_site_oficial: true
+  field_video_de_cachoeiras: true
+  langcode: true
+  layout_builder__layout: true

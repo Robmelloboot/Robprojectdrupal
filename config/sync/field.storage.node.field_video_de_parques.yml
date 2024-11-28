@@ -1,0 +1,20 @@
+uuid: de316864-39ab-4d53-b299-1a9d48e886da
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_video_de_parques
+field_name: field_video_de_parques
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

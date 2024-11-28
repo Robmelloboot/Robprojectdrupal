@@ -1,0 +1,11 @@
+uuid: 627b7a48-5f1e-4f3a-8137-08ff50fe2dcb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques_aquaticos
+id: node.parques_aquaticos
+target_entity_type_id: node
+target_bundle: parques_aquaticos
+default_langcode: site_default
+language_alterable: false

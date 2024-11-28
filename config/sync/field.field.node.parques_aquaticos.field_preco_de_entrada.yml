@@ -1,0 +1,19 @@
+uuid: 6d2e6841-f1e4-47a1-bc7a-24a586031a96
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preco_de_entrada
+    - node.type.parques_aquaticos
+id: node.parques_aquaticos.field_preco_de_entrada
+field_name: field_preco_de_entrada
+entity_type: node
+bundle: parques_aquaticos
+label: 'Preço de entrada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 63fe7696-0015-44fb-8b1c-dd61ddee3dc5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.localizacoes.field_local
+    - taxonomy.vocabulary.localizacoes
+  module:
+    - text
+id: taxonomy_term.localizacoes.default
+targetEntityType: taxonomy_term
+bundle: localizacoes
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_local:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

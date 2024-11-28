@@ -1,0 +1,9 @@
+uuid: 8fef62cc-e9f9-49a8-a6b7-603c46e567ce
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Dificuldades
+vid: dificuldades
+description: 'Dificuldade de acesso a cachoreira'
+weight: 0
+new_revision: false

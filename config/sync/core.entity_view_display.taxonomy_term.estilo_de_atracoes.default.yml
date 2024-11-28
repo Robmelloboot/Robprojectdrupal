@@ -1,0 +1,31 @@
+uuid: 90450b3b-1283-4f0e-9439-33b65706f3f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.estilo_de_atracoes.field_atracoes
+    - taxonomy.vocabulary.estilo_de_atracoes
+  module:
+    - text
+id: taxonomy_term.estilo_de_atracoes.default
+targetEntityType: taxonomy_term
+bundle: estilo_de_atracoes
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_atracoes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

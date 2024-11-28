@@ -1,0 +1,19 @@
+uuid: 1302c8e9-6b32-4e66-9220-b4b4db1ed853
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios_de_funcionamento
+    - node.type.parques_tematicos
+id: node.parques_tematicos.field_horarios_de_funcionamento
+field_name: field_horarios_de_funcionamento
+entity_type: node
+bundle: parques_tematicos
+label: 'Horários de Funcionamento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

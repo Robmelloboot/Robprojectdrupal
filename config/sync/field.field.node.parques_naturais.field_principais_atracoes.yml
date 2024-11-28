@@ -1,0 +1,19 @@
+uuid: f5a11c14-90e6-44c2-ba9b-5ed64e4233b0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_principais_atracoes
+    - node.type.parques_naturais
+id: node.parques_naturais.field_principais_atracoes
+field_name: field_principais_atracoes
+entity_type: node
+bundle: parques_naturais
+label: 'Principais Atrações'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
